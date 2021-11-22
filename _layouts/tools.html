@@ -1,0 +1,53 @@
+---
+layout: default
+---
+
+<h1>Tools</h1>
+
+<div id="tools">
+  {% for a in site.tools %}
+  <div class="card tool {{a.pk}}">
+    <input type="checkbox" id="{{ a.name }}-icon" class="expand-card" />
+    <div class="expand-container">
+      <label for="{{ a.name }}-icon" class="expand-icon"></label>
+    </div>
+    <div class="card-content">
+      <span class="title">
+        <h2>{{ a.name }}</h2>
+        <a href="/tools?filter={{a.pk}}" class="iconLink">
+          <i class="fa fa-external-link" aria-hidden="true"></i>
+        </a>
+      </span>
+      <div class="hidden-content">
+        <span class="subtitle">Description</span>
+        <p class="markdown-it text-block">{{ a.description }}</p>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+
+<script>
+  const urlParams = new URLSearchParams(window.location.search);
+  const myParam = urlParams.get("filter");
+  if (myParam != null) {
+    const filters = myParam.split(",");
+    filters.forEach(showFiltered);
+  } else {
+    showFiltered("tool");
+  }
+
+  function showFiltered(filter) {
+    const test = document.querySelectorAll("." + filter);
+    for (var i of test) {
+      i.style.display = "block";
+    }
+    if (
+      document.querySelectorAll('.card[style*="display: block"]').length === 1
+    ) {
+      document.querySelectorAll(
+        '.card[style*="display: block"] input'
+      )[0].checked = true;
+    }
+  }
+</script>

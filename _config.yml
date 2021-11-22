@@ -1,0 +1,19 @@
+process_name: SCRUB
+process_description: Este processo é utilizado na prática por uma empresa de software.
+activity_graph: "graph TD\n ATV_020[Daily Meeting]\n ATV_011[Pre-Planning: Definir Meta da Sprint]\n ATV_015[Testar Software]\n ATV_017[Avaliar e Homologar Software]\n ATV_005[Especificar Arquitetura do Software]\n ATV_014[Revisar e Integrar Código Fonte]\n ATV_016[Revisar e Integrar Código para Homologação]\n ATV_009[Especificar Requisitos de Integração]\n ATV_004[Definir Cronograma do Projeto]\n ATV_006[Instanciar Ambiente de Desenvolvimento]\n ATV_010[Especificar Protótipos UX]\n ATV_019[Elaborar e Apresentar Status Report do Projeto]\n ATV_022[Sprint Retrospective]\n ATV_023[Especificar Casos de Teste]\n ATV_012[Planning: Definir tarefas do Sprint Backlog]\n ATV_007[Especificar Processos de Negócio]\n ATV_018[Implantar o Produto]\n ATV_021[Sprint Review]\n ATV_024[Realizar Retrospectiva do Projeto]\n ATV_013[Implementar Requisitos]\n ATV_003[Identificar e Priorizar Requisitos Iniciais do Software]\n ATV_001[Elaborar Documento de Visão]\n ATV_008[Especificar Requisitos do Software]\n ATV_002[Formar a Equipe de Projeto]\n"
+
+collections:
+  phases:
+    output: true
+  activities:
+    output: true
+  artifacts:
+    output: true
+  roles:
+    output: true
+  templates:
+    output: true
+  tools:
+    output: true
+  guidelines:
+    output: true

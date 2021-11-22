@@ -1,0 +1,77 @@
+---
+layout: default
+---
+
+<h1>Roles</h1>
+
+<div id="roles">
+  {% for a in site.roles %}
+  <div class="card role {{a.pk}}">
+    <input type="checkbox" id="{{ a.name }}-icon" class="expand-card" />
+    <div class="expand-container">
+      <label for="{{ a.name }}-icon" class="expand-icon"></label>
+    </div>
+    <div class="card-content">
+      <span class="title">
+        <h2>{{ a.name }}</h2>
+        <a href="/roles?filter={{a.pk}}" class="iconLink">
+          <i class="fa fa-external-link" aria-hidden="true"></i>
+        </a>
+      </span>
+      <div class="hidden-content">
+        <div class="card-row">
+          <div class="left-column">
+            <span class="subtitle">Description</span>
+            <p class="markdown-it text-block">{{ a.description }}</p>
+          </div>
+          <div class="right-column">
+            {% if a.participated_activities != "" and a.participated_activities != null %}
+            <span class="subtitle">Participant in</span>
+            <ul>
+              {% for activity in a.participated_activities %}
+              <li><a href="/activities?filter={{activity[0]}}">{{activity[1]}}</a></li>
+              {% endfor %}
+            </ul>
+            {% endif %}
+          </div>
+          <div class="right-column">
+            {% if a.required_activities != "" and a.required_activities != null %}
+            <span class="subtitle">Responsible by</span>
+            <ul>
+              {% for activity in a.required_activities %}
+              <li><a href="/activities?filter={{activity[0]}}">{{activity[1]}}</a></li>
+              {% endfor %}
+            </ul>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+
+<script>
+  const urlParams = new URLSearchParams(window.location.search);
+  const myParam = urlParams.get("filter");
+  if (myParam != null) {
+    const filters = myParam.split(",");
+    filters.forEach(showFiltered);
+  } else {
+    showFiltered("role");
+  }
+
+  function showFiltered(filter) {
+    const test = document.querySelectorAll("." + filter);
+    for (var i of test) {
+      i.style.display = "block";
+    }
+    if (
+      document.querySelectorAll('.card[style*="display: block"]').length === 1
+    ) {
+      document.querySelectorAll(
+        '.card[style*="display: block"] input'
+      )[0].checked = true;
+    }
+  }
+</script>
