@@ -3,25 +3,20 @@ layout: phases
 
 pk: phase_2
 
-name: "Desenvolvimento em Sprints"
+name: "Development in Sprints"
 description: >-
-  Cada sprint (iteração) entrega um incremento operacional do software.
+  This phase focuses on iterative and incremental system development. Each iteration, called a Sprint, delivers an operational increment that satisfies a predetermined subset of system requirements.
 activities:
-  ATV_007: "Especificar Processos de Negócio"
-  ATV_008: "Especificar Requisitos do Software"
-  ATV_009: "Especificar Requisitos de Integração"
-  ATV_010: "Especificar Protótipos UX"
-  ATV_011: "Pre-Planning: Definir Meta da Sprint"
-  ATV_012: "Planning: Definir tarefas do Sprint Backlog"
-  ATV_013: "Implementar Requisitos"
-  ATV_014: "Revisar e Integrar Código Fonte"
-  ATV_015: "Testar Software"
-  ATV_016: "Revisar e Integrar Código para Homologação"
-  ATV_017: "Avaliar e Homologar Software"
-  ATV_018: "Implantar o Produto"
-  ATV_019: "Elaborar e Apresentar Status Report do Projeto"
+  ATV_007: "Specify Business Process"
+  ATV_008: "Specify System Requirements"
+  ATV_010: "Specify Screen Prototypes"
+  ATV_012: "Planning: Define Sprint Tasks"
+  ATV_025: "Generate System Structure"
+  ATV_013: "Implement Requirements"
+  ATV_015: "Test the System"
+  ATV_017: "Evaluate and Approve the System"
+  ATV_019: "Prepare and Present Project Status Report"
   ATV_020: "Daily Meeting"
   ATV_021: "Sprint Review"
   ATV_022: "Sprint Retrospective"
-  ATV_023: "Especificar Casos de Teste"
 ---

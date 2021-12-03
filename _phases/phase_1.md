@@ -3,14 +3,11 @@ layout: phases
 
 pk: phase_1
 
-name: "Planejamento"
+name: "Planning"
 description: >-
-  Objetivo é planejar o projeto.
+  The purpose of this phase is to plan the system development project.
 activities:
-  ATV_001: "Elaborar Documento de Visão"
-  ATV_002: "Formar a Equipe de Projeto"
-  ATV_003: "Identificar e Priorizar Requisitos Iniciais do Software"
-  ATV_004: "Definir Cronograma do Projeto"
-  ATV_005: "Especificar Arquitetura do Software"
-  ATV_006: "Instanciar Ambiente de Desenvolvimento"
+  ATV_001: "Prepare Vision Document"
+  ATV_003: "Identify and Prioritize Initial System Requirements"
+  ATV_006: "Instantiate Development Environment"
 ---

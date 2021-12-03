@@ -3,9 +3,9 @@ layout: phases
 
 pk: phase_3
 
-name: "Encerramento"
+name: "Closing"
 description: >-
-  Contempla atividades realizadas no final do processo.
+  This phase focuses on reviewing the project at the end of system development and identifying lessons that might be useful for future projects.
 activities:
-  ATV_024: "Realizar Retrospectiva do Projeto"
+  ATV_024: "Project Retrospective"
 ---

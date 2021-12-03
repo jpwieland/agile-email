@@ -1,6 +1,6 @@
-process_name: SCRUB
-process_description: Este processo é utilizado na prática por uma empresa de software.
-activity_graph: "graph TD\n ATV_011[Pre-Planning: Definir Meta da Sprint]\n ATV_022[Sprint Retrospective]\n ATV_008[Especificar Requisitos do Software]\n ATV_020[Daily Meeting]\n ATV_019[Elaborar e Apresentar Status Report do Projeto]\n ATV_014[Revisar e Integrar Código Fonte]\n ATV_013[Implementar Requisitos]\n ATV_010[Especificar Protótipos UX]\n ATV_005[Especificar Arquitetura do Software]\n ATV_017[Avaliar e Homologar Software]\n ATV_002[Formar a Equipe de Projeto]\n ATV_006[Instanciar Ambiente de Desenvolvimento]\n ATV_003[Identificar e Priorizar Requisitos Iniciais do Software]\n ATV_001[Elaborar Documento de Visão]\n ATV_009[Especificar Requisitos de Integração]\n ATV_004[Definir Cronograma do Projeto]\n ATV_015[Testar Software]\n ATV_007[Especificar Processos de Negócio]\n ATV_024[Realizar Retrospectiva do Projeto]\n ATV_021[Sprint Review]\n ATV_023[Especificar Casos de Teste]\n ATV_016[Revisar e Integrar Código para Homologação]\n ATV_018[Implantar o Produto]\n ATV_012[Planning: Definir tarefas do Sprint Backlog]\n"
+process_name: SCRUB4PA - An Agile Development Model for Process Automation
+process_description: SCRUB4PA is an SCRUM-based agile process model to guide the development of Process Aware Information Systems (PAIS).
+activity_graph: "graph TD\n ATV_024[Project Retrospective]\n ATV_025[Generate System Structure]\n ATV_001[Prepare Vision Document]\n ATV_013[Implement Requirements]\n ATV_015[Test the System]\n ATV_017[Evaluate and Approve the System]\n ATV_008[Specify System Requirements]\n ATV_012[Planning: Define Sprint Tasks]\n ATV_019[Prepare and Present Project Status Report]\n ATV_021[Sprint Review]\n ATV_022[Sprint Retrospective]\n ATV_006[Instantiate Development Environment]\n ATV_020[Daily Meeting]\n ATV_003[Identify and Prioritize Initial System Requirements]\n ATV_010[Specify Screen Prototypes]\n ATV_007[Specify Business Process]\n"
 
 collections:
   phases:
@@ -14,6 +14,4 @@ collections:
   templates:
     output: true
   tools:
-    output: true
-  guidelines:
     output: true
