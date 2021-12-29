@@ -1,6 +1,6 @@
 process_name: SCRUB4PA - An Agile Development Model for Process Automation
 process_description: SCRUB4PA is an SCRUM-based agile process model to guide the development of Process Aware Information Systems (PAIS).
-activity_graph: "graph TD\n ATV_024[Project Retrospective]\n ATV_025[Generate System Structure]\n ATV_001[Prepare Vision Document]\n ATV_013[Implement Requirements]\n ATV_015[Test the System]\n ATV_017[Evaluate and Approve the System]\n ATV_008[Specify System Requirements]\n ATV_012[Planning: Define Sprint Tasks]\n ATV_019[Prepare and Present Project Status Report]\n ATV_021[Sprint Review]\n ATV_022[Sprint Retrospective]\n ATV_006[Instantiate Development Environment]\n ATV_020[Daily Meeting]\n ATV_003[Identify and Prioritize Initial System Requirements]\n ATV_010[Specify Screen Prototypes]\n ATV_007[Specify Business Process]\n"
+activity_graph: "graph TD\n ATV_013[Implement Requirements]\n ATV_007[Specify Business Process]\n ATV_017[Evaluate and Approve the System]\n ATV_025[Generate System Structure]\n ATV_019[Prepare and Present Project Status Report]\n ATV_003[Identify and Prioritize Initial System Requirements]\n ATV_012[Planning: Define Sprint Tasks]\n ATV_015[Test the System]\n ATV_024[Project Retrospective]\n ATV_001[Prepare Vision Document]\n ATV_008[Specify System Requirements]\n ATV_020[Daily Meeting]\n ATV_022[Sprint Retrospective]\n ATV_006[Instantiate Development Environment]\n ATV_010[Specify Screen Prototypes]\n ATV_021[Sprint Review]\n"
 
 collections:
   phases:
